@@ -1,0 +1,132 @@
+*{
+margin: 0;
+padding: 0;
+}
+html, body
+ {min-height:100%; padding:0; margin:0;}
+
+div#navBar{
+border: 1px;
+border-radius: 10px;
+width:80%;
+left: 10%;
+z-index: 5;
+top: 25px;
+/*background-color: #50c1f9;*/
+position:fixed;  
+}
+
+#menubarL,#menubarL ul, #menubarR,#menubarR ul {list-style: none;}
+#menubarL>li{float: left;}
+#menubarR>li{float: right;}
+#menubarL li a,#menubarR li a{
+	display: block;
+	color:#ffffff;
+	height: 20px;
+	/*width: 75px;*/
+	padding: 13px;	
+	border: 1px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 15px;	
+	text-align: center;
+	font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/*Style of the paddington title, left part of the side.*/
+#menubarL li a{width: 300px; padding-top: 10px;font-size:20px;font-weight: bold; text-align: justify;color:#ffd633;font-family: "Lucida Bright","Rockwell","serif";font-style: italic;}
+
+
+/*Style of the dropdown list. Opacity to 0*/
+#linklist{
+	position: absolute;
+	background-color:rgba(44, 44, 44, 0);
+	z-index: 1;
+	border: 1px;
+	border-radius: 5px;	
+	display: none;
+}
+/*size of the cell*/
+#linklist>li>a{
+	display: block;	
+	border:20px;
+	height: 20px;
+	width: 85px;		
+}
+#menubarL li a:hover,#menubarR li a:hover{
+	font-color: #ffd633;
+	color: #ffd633;
+}
+#menubarR li:hover #linklist{
+display: block;
+}
+b.carot{
+	font-size: 12px;
+}
+#wrapper {
+	padding:50px 0; 
+	position:absolute; 
+	top:0;
+	bottom:0; 
+	left:0; 
+	right:0;
+}
+
+#container {
+	position: absolute;
+	min-height:100%; 
+	left:20%;
+	width: 60%;
+	margin-top: -50px;
+	text-align: center;
+	background-attachment: scroll;
+	height:950px;
+	background-image: url(BgLogoOri.png);
+	background-position: center;
+	background-size:cover;
+	}
+/* fisrt welcome text*/
+#introLead	{ margin-bottom: 70px;text-transform: uppercase;font-family: "Lucida Bright","Rockwell","serif";line-height: 15px;
+font-size:45px; font-style: italic; color:#FFD500;
+}
+/* Second text*/
+#introText	{margin-bottom: 90px;text-transform: uppercase;font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;line-height: 15px;
+ font-size: 19px; font-style: normal;color:#ffffff;
+}
+
+/* code of the intro button*/
+#introbuttonb	 {
+	background: #EACC00;
+    color: #fff;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    height: 60px;
+    width: 150px;
+    line-height: 60px;
+    margin: 25px 25px;
+    text-align: center;
+    border: 0;
+ 	opacity :1;
+ 	-webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    z-index: 10000000;
+}
+a.introButton {
+	text-decoration: none;
+}
+a.introButton:hover #introbuttonb {
+	text-decoration: none;
+	opacity:0.50;
+ background: #3071A9;
+}
+
+/* hover over the lets go button*/
+#introbuttonb :hover
+ {
+ opacity:0.50;
+ background: #3071A9;
+ }
+#intro {padding-top: 440px;	padding-bottom: 300px;}
+footer {
+	margin-bottom:-50px; height:50px;
+}

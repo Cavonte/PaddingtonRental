@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<?php	
+define('DB_USER', 'customers');
+define('DB_PASSWORD', 'pass');
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'users');
+
+$dbc = @mysqli_connect(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME)
+or die('could not connet to my sql : ' .
+mysqli_connect_error());
+
+?>
+</body>
+</html>
+
+
